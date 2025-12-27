@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   Github,
   Linkedin,
+  Twitter,
   Mail,
   Code2,
   Server,
@@ -722,7 +723,7 @@ const App: React.FC = () => {
                     Focus on React performance patterns, accessibility, and state management for complex dashboards.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {["React.js", "TypeScript", "Next.js", "Tailwind", "Framer Motion"].map(skill => (
+                    {["JavaScript", "React.js", "Next.js", "Tailwind"].map(skill => (
                       <span key={skill} className="px-2 py-1 bg-secondary border border-tertiary rounded-sm text-xs text-zinc-300 font-mono hover:border-zinc-500 transition-colors cursor-default">
                         {skill}
                       </span>
@@ -789,7 +790,7 @@ const App: React.FC = () => {
             title="Testimonials"
           />
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {TESTIMONIALS.map(item => (
               <div key={item.id} className="bg-primary/50 border border-tertiary p-8 relative">
                 <Quote className="absolute top-8 right-8 text-tertiary w-8 h-8 opacity-50" />
@@ -1008,9 +1009,10 @@ const App: React.FC = () => {
             &copy; {new Date().getFullYear()} David Adebanwo.
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Github size={18} /></a>
-            <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Linkedin size={18} /></a>
-            <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Mail size={18} /></a>
+            <a href="mailto:me@davidadebanwo.com" className="text-zinc-500 hover:text-white transition-colors"><Mail size={18} /></a>
+            <a href="https://www.linkedin.com/in/david-adebanwo" className="text-zinc-500 hover:text-white transition-colors"><Linkedin size={18} /></a>
+            <a href="https://twitter.com/dave_O_A" className="text-zinc-500 hover:text-white transition-colors"><Twitter size={18} /></a>
+            <a href="https://github.com/davidadebanwo" className="text-zinc-500 hover:text-white transition-colors"><Github size={18} /></a>
           </div>
         </div>
       </footer>
