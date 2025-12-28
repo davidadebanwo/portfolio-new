@@ -345,7 +345,7 @@ const App: React.FC = () => {
       }
 
       // Send data to backend API
-      const response = await fetch('http://api.davidadebanwo.com/api/messages', {
+      const response = await fetch('https://api.davidadebanwo.com/api/messages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
