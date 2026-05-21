@@ -454,7 +454,7 @@ const App: React.FC = () => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
                 </span>
                 <span className="text-accent text-xs font-mono font-bold tracking-wide">
-                  ACCEPTING CONSULTING CLIENTS FOR Q1
+                  ACCEPTING CONSULTING CLIENTS FOR Q2
                 </span>
               </div>
 
@@ -829,7 +829,7 @@ const App: React.FC = () => {
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-4">Ready to elevate your business?</h3>
                   <p className="text-zinc-400 leading-relaxed text-lg">
-                    I'm currently accepting new projects for Q1. Whether you need a full SaaS build, a high-converting landing page, or a system overhaul, let's talk.
+                    I'm currently accepting new projects for Q2. Whether you need a full SaaS build, a high-converting landing page, or a system overhaul, let's talk.
                   </p>
                 </div>
                 

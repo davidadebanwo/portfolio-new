@@ -141,7 +141,6 @@ const CONCEPTS: Concept[] = [
         tags: ["Photographer"],
         image: "/images/creatives/kevinhwang/1.png",
         gallery: [
-            "/images/creatives/kevinhwang/1.png",
             "/images/creatives/kevinhwang/2.png",
             "/images/creatives/kevinhwang/3.png",
             "/images/creatives/kevinhwang/4.png",
@@ -356,6 +355,7 @@ const Creatives: React.FC = () => {
                     <img
                         src="/images/creatives/marissa.png"
                         alt="High Fashion Editorial"
+                        fetchPriority="high"
                         className="w-full h-full object-cover grayscale opacity-30 lg:opacity-70 object-top lg:object-center"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent lg:bg-gradient-to-r lg:from-black lg:via-black/50 lg:to-transparent"></div>
@@ -463,6 +463,8 @@ const Creatives: React.FC = () => {
                                     <img
                                         src={concept.image}
                                         alt={concept.title}
+                                        loading="lazy"
+                                        decoding="async"
                                         className="w-full h-full object-cover grayscale-[30%] opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700 ease-in-out"
                                     />
 
@@ -781,7 +783,7 @@ const Creatives: React.FC = () => {
                                     <div className="h-20 sm:h-24 bg-zinc-950 border-t border-white/5 p-3 sm:p-4 overflow-x-auto flex gap-3 snap-x scrollbar-thin scrollbar-thumb-zinc-700">
                                         {allImages.map((img, idx) => (
                                             <button key={idx} onClick={() => setCurrentImageIndex(idx)} className={`relative shrink-0 w-24 sm:w-32 h-full overflow-hidden transition-all snap-start outline-none border ${currentImageIndex === idx ? 'border-white opacity-100' : 'border-transparent opacity-40 hover:opacity-100'}`}>
-                                                <img src={img} alt="" className="w-full h-full object-cover grayscale" />
+                                                <img src={img} alt="" className="w-full h-full object-cover grayscale" loading="lazy" decoding="async" />
                                             </button>
                                         ))}
                                     </div>
