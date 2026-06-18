@@ -107,6 +107,31 @@ const PORTFOLIO_ITEMS: Project[] = [
   },
   {
     id: 2,
+    title: "Discipline Mastery Hub - Umar Yaradua",
+    description: "A web platform for a leadership and self-development program by Umar Yaradua. I implemented tools to manage cohorts, assign mentors, and monitor student development pathways.",
+    tags: ["Node.js", "MySQL", "Express"],
+    image: "./images/umaryaradua/umaryaradua2.png",
+    gallery: [
+      "/images/umaryaradua/umaryaradua2.png",
+      "/images/umaryaradua/umaryaradua3.png",
+      "/images/umaryaradua/umaryaradua4.png",
+      "/images/umaryaradua/umaryaradua5.png",
+      "/images/umaryaradua/umaryaradua6.png",
+      "/images/umaryaradua/umaryaradua7.png",
+      "/images/umaryaradua/umaryaradua8.png",
+      "/images/umaryaradua/umaryaradua9.png",
+      "/images/umaryaradua/umaryaradua10.png",
+      "/images/umaryaradua/umaryaradua11.png",
+      "/images/umaryaradua/umaryaradua12.png",
+      "/images/umaryaradua/umaryaradua13.png",
+      "/images/umaryaradua/umaryaradua14.png",
+      "/images/umaryaradua/umaryaradua15.png",
+      "/images/umaryaradua/umaryaradua1.png"
+    ],
+    project_link: "https://umaryaradua.com"
+  },
+  {
+    id: 3,
     title: "ESTAM University Portal",
     description: "Enterprise admission system with automated letter generation and applicant tracking dashboard using robust SQL architecture.",
     tags: ["Enterprise", "MySQL", "Express"],
@@ -118,7 +143,7 @@ const PORTFOLIO_ITEMS: Project[] = [
     project_link: "https://estamuni.net"
   },
   {
-    id: 3,
+    id: 4,
     title: "StrategizeAI",
     description: "An AI-powered tool that helps SMBs generate content calendars based on their goals, business objectives, target audience, social media platforms, and strategy duration.",
     tags: ["AI", "Content Marketing", "SaaS"],
@@ -133,7 +158,7 @@ const PORTFOLIO_ITEMS: Project[] = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: "FlowState",
     description: "A goal-oriented application that accepts user goals and generates personalized timetables to help achieve those goals efficiently.",
     tags: ["Productivity", "Time Management", "SaaS"],
@@ -146,10 +171,10 @@ const PORTFOLIO_ITEMS: Project[] = [
     ]
   },
   {
-    id: 5,
-    title: "ascendvicePaws",
+    id: 6,
+    title: "AscendvicePaws",
     description: "A full-stack E-Learning platform featuring secure user authentication, payment gateway integration, and a progress-tracking dashboard. I handled the end-to-end development, ensuring a seamless experience for students and easy content management for the admin",
-    tags: ["E-Learning", "Dashboard", "Course Management", "E-Learning"],
+    tags: ["E-Learning", "Dashboard", "Course Management"],
     image: "/images/ascendvice-paws/ascendvice-paws1.png",
     gallery: [
       "/images/ascendvice-paws/ascendvice-paws2.png",
@@ -161,7 +186,26 @@ const PORTFOLIO_ITEMS: Project[] = [
     project_link: "https://paws.ascendvice.com"
   },
   {
-    id: 6,
+    id: 7,
+    title: "Emmanuel Adama Portfolio",
+    description: "This website is the professional portfolio of Emmanuel Adama, an Email Marketing Strategist and Conversion Copywriter. It showcases his work engineering revenue-generating B2B cold outreach systems and data-driven B2C email retention engines.",
+    tags: ["Landing page", "UI/UX", "Portfolio"],
+    image: "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio1.png",
+    gallery: [
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio2.png",
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio3.png",
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio4.png",
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio5.png",
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio6.png",
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio7.png",
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio8.png",
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio9.png",
+      "/images/emmanuel-adama-portfolio/emmanuel-adama-portfolio10.png"
+    ],
+    project_link: "https://emmanueladama.com"
+  },
+  {
+    id: 8,
     title: "Shawarma House",
     description: "Created a fast food restaurant site with responsive design and exceptional visual aesthetic, delivering an intuitive and engaging user experience across all devices.",
     tags: ["Landing page", "UI/UX"],
@@ -234,11 +278,11 @@ const ProjectCard: React.FC<{
     onClick={() => onSelect(project)}
   >
     <div className="aspect-[16/9] overflow-hidden bg-primary relative">
-      <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
+      <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+        className="w-full h-full object-cover filter grayscale-[50%] group-hover:grayscale-0 transition-all duration-500"
       />
     </div>
     <div className="p-6">
